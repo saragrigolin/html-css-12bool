@@ -1,0 +1,86 @@
+:root {
+    --background-row: #006CFA;
+    --white: #ffffff;
+    --background-nested-row: #01E165;
+}
+
+html {
+    font-size: 100%;
+}
+
+.row {
+    height: 70px;
+}
+
+.nested.row {
+    margin: 10px;
+    height: 50px;
+    border: 0;
+}
+
+.row div {
+    border: 1px solid var(--white);
+    height: 100%;
+    text-align: center;
+    background-color: var(--background-row);
+}
+
+.nested.row div {
+    border: 1px solid var(--background-row);
+    background-color: var(--background-nested-row);
+}
+
+.row span {
+    line-height: 70px;
+    color: var(--white);
+}
+
+.nested.row span {
+    line-height: 50px;
+}
+
+.second.container, 
+.third.container,
+.nested.container,
+.alignment.container,
+.justify.container {
+    margin-top: 1em;
+}
+
+.center.row {
+    justify-content: center;
+}
+
+.right.row {
+    justify-content: flex-end;
+}
+
+.alignment.container .top span,
+.alignment.container .middle span,
+.alignment.container .bottom span {
+    line-height: 35px;
+}
+
+.top.row {
+    align-items: flex-start;
+}
+
+.middle.row {
+    align-items: center;
+}
+
+.bottom.row {
+    align-items: flex-end;
+}
+
+div.height-50 {
+    height: 50%;
+}
+
+.justify.container .nested.row.around {
+    justify-content: space-around;
+}
+
+.justify.container .nested.row.between {
+    justify-content: space-between;
+}
