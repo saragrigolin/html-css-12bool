@@ -1,5 +1,6 @@
 :root {
     --background-row: #006CFA;
+    --white: #ffffff;
 }
 
 html {
@@ -8,5 +9,16 @@ html {
 
 .row {
     background-color: var(--background-row);
-    height: 80px;
+    height: 70px;
+}
+
+.row div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--white);
+}
+
+.row span {
+    color: var(--white);
 }
