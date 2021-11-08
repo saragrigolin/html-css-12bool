@@ -42,7 +42,8 @@ html {
 .second.container, 
 .third.container,
 .nested.container,
-.alignment.container {
+.alignment.container,
+.justify.container {
     margin-top: 1em;
 }
 
@@ -72,4 +73,12 @@ html {
 
 div.height-50 {
     height: 50%;
+}
+
+.justify.container .nested.row.around {
+    justify-content: space-around;
+}
+
+.justify.container .nested.row.between {
+    justify-content: space-between;
 }
