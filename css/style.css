@@ -41,6 +41,35 @@ html {
 
 .second.container, 
 .third.container,
-.nested.container {
+.nested.container,
+.alignment.container {
     margin-top: 1em;
+}
+
+.center.row {
+    justify-content: center;
+}
+
+.right.row {
+    justify-content: flex-end;
+}
+
+.alignment.container span {
+    line-height: 35px;
+}
+
+.top.row {
+    align-items: flex-start;
+}
+
+.middle.row {
+    align-items: center;
+}
+
+.bottom.row {
+    align-items: flex-end;
+}
+
+div.height-50 {
+    height: 50%;
 }
