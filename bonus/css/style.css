@@ -1,7 +1,9 @@
 :root {
-    --background-row: #006CFA;
-    --white: #ffffff;
-    --background-nested-row: #01E165;
+    --red: #F90201;
+    --brown: #783F04;
+    --orange: #FC9A00;
+    --blue: #072FFF;
+    --black: #000000;
 }
 
 html {
@@ -9,78 +11,30 @@ html {
 }
 
 .row {
-    height: 70px;
-}
-
-.nested.row {
-    margin: 10px;
     height: 50px;
-    border: 0;
 }
 
-.row div {
-    border: 1px solid var(--white);
-    height: 100%;
-    text-align: center;
-    background-color: var(--background-row);
+.container {
+    width: 600px;
+    margin: 2em auto;
 }
 
-.nested.row div {
-    border: 1px solid var(--background-row);
-    background-color: var(--background-nested-row);
+.red {
+    background-color: var(--red);
 }
 
-.row span {
-    line-height: 70px;
-    color: var(--white);
+.brown {
+    background-color: var(--brown);
 }
 
-.nested.row span {
-    line-height: 50px;
+.orange {
+    background-color: var(--orange);
 }
 
-.second.container, 
-.third.container,
-.nested.container,
-.alignment.container,
-.justify.container {
-    margin-top: 1em;
+.blue {
+    background-color: var(--blue);
 }
 
-.center.row {
-    justify-content: center;
-}
-
-.right.row {
-    justify-content: flex-end;
-}
-
-.alignment.container .top span,
-.alignment.container .middle span,
-.alignment.container .bottom span {
-    line-height: 35px;
-}
-
-.top.row {
-    align-items: flex-start;
-}
-
-.middle.row {
-    align-items: center;
-}
-
-.bottom.row {
-    align-items: flex-end;
-}
-
-div.height-50 {
-    height: 50%;
-}
-
-.justify.container .nested.row.around {
-    justify-content: space-around;
-}
-
-.justify.container .nested.row.between {
-    justify-content: space-between;
+.black {
+    background-color: var(--black);
 }
