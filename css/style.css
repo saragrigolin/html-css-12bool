@@ -9,7 +9,6 @@ html {
 }
 
 .row {
-    background-color: var(--background-row);
     height: 70px;
 }
 
@@ -17,17 +16,18 @@ html {
     margin: 10px;
     height: 50px;
     border: 0;
-    background-color: var(--background-nested-row);
 }
 
 .row div {
     border: 1px solid var(--white);
     height: 100%;
     text-align: center;
+    background-color: var(--background-row);
 }
 
 .nested.row div {
     border: 1px solid var(--background-row);
+    background-color: var(--background-nested-row);
 }
 
 .row span {
@@ -39,6 +39,6 @@ html {
     line-height: 50px;
 }
 
-.second.container {
+.second.container, .third.container {
     margin-top: 1em;
 }
