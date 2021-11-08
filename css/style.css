@@ -1,0 +1,12 @@
+:root {
+    --background-row: #006CFA;
+}
+
+html {
+    font-size: 100%;
+}
+
+.row {
+    background-color: var(--background-row);
+    height: 80px;
+}
