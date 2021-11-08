@@ -39,6 +39,8 @@ html {
     line-height: 50px;
 }
 
-.second.container, .third.container {
+.second.container, 
+.third.container,
+.nested.container {
     margin-top: 1em;
 }
