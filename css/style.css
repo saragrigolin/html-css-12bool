@@ -55,7 +55,9 @@ html {
     justify-content: flex-end;
 }
 
-.alignment.container span {
+.alignment.container .top span,
+.alignment.container .middle span,
+.alignment.container .bottom span {
     line-height: 35px;
 }
 
