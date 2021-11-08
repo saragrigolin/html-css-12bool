@@ -1,6 +1,7 @@
 :root {
     --background-row: #006CFA;
     --white: #ffffff;
+    --background-nested-row: #01E165;
 }
 
 html {
@@ -12,13 +13,29 @@ html {
     height: 70px;
 }
 
+.nested.row {
+    margin: 10px;
+    height: 50px;
+    border: 0;
+    background-color: var(--background-nested-row);
+}
+
 .row div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid var(--white);
+    height: 100%;
+    text-align: center;
+}
+
+.nested.row div {
+    border: 1px solid var(--background-row);
 }
 
 .row span {
+    line-height: 70px;
     color: var(--white);
 }
+
+.nested.row span {
+    line-height: 50px;
+}
+
